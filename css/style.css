@@ -2306,3 +2306,12 @@ img.author-box-image {
         position: relative !important;
     }
 }
+
+.bgchange{
+    background: #202020;
+    color: white;
+}
+.hww-text {
+    font-weight: 600;
+    padding-left: 10px;
+}
