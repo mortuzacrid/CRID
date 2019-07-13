@@ -31,29 +31,18 @@
 	        "images/bg/bg2.jpg",
 	        "images/bg/bg3.jpg"
 	    ], {duration: 5000, fade: 500, centeredY: true });
-
-		$("#mapwrapper").gMap({ controls: false,
-         	scrollwheel: false,
-         	markers: [{
-              	latitude:40.7566,
-				longitude: -73.9863,
-          	icon: { image: "images/marker.png",
-              	iconsize: [44,44],
-          		iconanchor: [12,46],
-          		infowindowanchor: [12, 0] } }],
-          	icon: {
-              	image: "images/marker.png",
-             	iconsize: [26, 46],
-              	iconanchor: [12, 46],
-              	infowindowanchor: [12, 0] },
-         	latitude:40.7566,
-         	longitude: -73.9863,
-          	zoom: 14 });
+        var preloader = $('.preloader');
+        $(window).load(function(){
+            preloader.remove();
+        });
     });
     </script>
 </head><!--/head-->
 <body>
-<div id="preloader"></div>
+
+    <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+
+
     <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
         <div class="container">
             <div class="navbar-header">
@@ -74,8 +63,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Signup</a></li>
+                            <li><a href="http://criddam.com/login/">Login</a></li>
+                            <li><a href="http://criddam.com/register/">Signup</a></li>
                         </ul>
                     </li>
                 </ul>
