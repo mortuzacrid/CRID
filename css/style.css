@@ -2331,11 +2331,31 @@ img.author-box-image {
     }
 }
 
-.bgchange{
-    background: #202020;
-    color: white;
-}
 .hww-text {
     font-weight: 600;
     padding-left: 10px;
+}
+.bgchange {
+    position: relative;
+    background: #202020;
+    overflow: hidden;
+    color: white;
+}
+.bgchange:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
+    background: url('file:///home/mortuza/Desktop/CRID/images/bg/bg1.jpg') center;
+    background-repeat: no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
