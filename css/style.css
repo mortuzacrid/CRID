@@ -245,10 +245,10 @@ blockquote {
     background-color: rgba(0, 0, 0, 0.2);
     clear: both;
     display: block;
-    font-size: 56px;
+    font-size: 80px;
     margin: 100px auto 0;
     position: relative;
-    width: 80px;
+    width: 180px;
     -webkit-transform: rotate(15deg);
     -moz-transform: rotate(15deg);
     -o-transform: rotate(15deg);
