@@ -2339,3 +2339,8 @@ img.author-box-image {
     background: #202020;
     color: white;
 }
+
+body {
+    background: #ffffff;
+    font-family: 'Hind Siliguri', sans-serif;
+}
