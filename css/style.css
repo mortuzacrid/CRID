@@ -2344,3 +2344,19 @@ body {
     background: #ffffff;
     font-family: 'Hind Siliguri', sans-serif;
 }
+.top-gap{
+    margin-top: 20px;
+}
+.top10{
+    margin-top: 10px;
+}
+.banner{
+    background: #f8f8f8;
+    padding: 20px;
+    margin: 20px;
+}
+i.fa.fa-child.side-gap {
+    margin-left: 10px;
+    font-size: 50px;
+    margin-right: 10px;
+}
