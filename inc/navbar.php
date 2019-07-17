@@ -11,7 +11,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">Home</a></li>
                 <li><a href="http://criddam.com/training/">Training</a></li>
-                <li><a href="http://criddam.com/robot-builders-community/">Community</a></li>
+                <li><a href="rbcommunity.php">Community</a></li>
                 <li><a href="aboutus.php">About Us</a></li>
                 <li><a href="http://criddam.com/contact-us/">Contact</a></li>
                 <li><a href="http://criddam.com/jobs/">Career</a></li>
