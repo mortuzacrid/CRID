@@ -5,7 +5,7 @@
                 <span class="sr-only">Toggle navigation</span>
                 <i class="fa fa-bars"></i>
             </button>
-             <a class="navbar-brand" href="index.html"><h1>CRID-DAM ROBOTIC LABS</h1></a>
+             <a class="navbar-brand" href="/"><h1>CRID-DAM ROBOTIC LABS</h1></a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
