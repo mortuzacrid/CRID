@@ -1,4 +1,5 @@
 <?php
+    $PAGENAME = "About Us";
     include 'inc/header.php';
     include 'inc/navbar.php';
 ?>

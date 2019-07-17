@@ -1,4 +1,5 @@
 <?php
+    $PAGENAME = "Robot Builders Community";
     include 'inc/header.php';
     include 'inc/navbar.php';
 ?>
@@ -46,13 +47,13 @@
             </ul>
 
             <div class="row">
-                <div class="col-md-4 ">
+                <div class="col-md-3 col-md-offset-1">
                     <a href="images/rbc/1.jpg" data-lightbox="image-1"><img class="img-responsive text-center" src="images/rbc/1.jpg" alt="Paper Cut Image"></a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3 col-md-offset-1">
                     <a href="images/rbc/2.jpg" data-lightbox="image-2"><img class="img-responsive" src="images/rbc/2.jpg" alt="Paper Cut Image"></a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3 col-md-offset-1">
                     <a href="images/rbc/3.jpg" data-lightbox="image-3"><img class="img-responsive" src="images/rbc/3.jpg" alt="Paper Cut Image"></a>
                 </div>
             </div>
