@@ -4,7 +4,7 @@
 ?>
 
 
-    <section class="container about-section animation bounceIn">
+    <section class="container about-section">
         <h1 class="animated text-center">About Us</h1>
         <hr>
         <div>
