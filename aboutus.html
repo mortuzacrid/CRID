@@ -11,6 +11,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" rel="stylesheet">
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -63,8 +65,8 @@
         </div>
     </header><!--/header-->
 
-    <section class="container about-section">
-        <h1>About Us</h1>
+    <section class="container about-section animation bounceIn">
+        <h1 class="animated text-center">About Us</h1>
         <hr>
         <div>
             <p>CRID-DAM Robotic Labs বাংলাদেশে প্রথম ও সর্ববৃহৎ রবোটিক্সদের Platform, যেখানে সকল Innovator, Learner, Professional, এবং Technician দের ঐক্যবদ্ধ করা হয়েছে। এখানে ইউনিক আইডিয়াকে বাস্তব রূপদান বা প্রোটোটাইপের সকল প্রকার সমস্যা সমাধান করে বাজারজাত করতে সহায়তা করবে। একজন innovator এর ইঞ্জিনিয়ারিং, পেটেন্টিং এবং মার্কেটিং সহায়তা করা হবে এমনকি প্রোটোটাইপ তৈরী করতে সীড ফান্ডের প্রয়োজন হলে ফান্ড দিয়েও সহায়তা করা হবে।</p>
@@ -76,24 +78,50 @@
                     <li>Bangladesh, The next robotic destination</li>
                     <li>স্বপ্নকে বাস্তবে রূপ দেয়া প্রযুক্তিকে ক্ষমতায়ন করা</li>
                 </ul>
-            </p>
+            </p>          
         </div>
+        <div class="gap"></div>
         <div class="row">
-            <div class="col-md-4"><img class="img-responsive" src="images/about-us/img1.png" alt="Paper Cut Image"></div>
-            <div class="col-md-4"><img class="img-responsive" src="images/about-us/img2.png" alt="Paper Cut Image"></div>
-            <div class="col-md-4"><img class="img-responsive" src="images/about-us/img3.png" alt="Paper Cut Image"></div>
+            <div class="col-md-4">
+                <a href="images/about-us/img1.png" data-lightbox="image-1"><img class="img-responsive" src="images/about-us/img1.png" alt="Paper Cut Image"></a>
+            </div>
+            <div class="col-md-4">
+                <a href="images/about-us/img2.png" data-lightbox="image-2"><img class="img-responsive" src="images/about-us/img2.png" alt="Paper Cut Image"></a>
+            </div>
+            <div class="col-md-4">
+                <a href="images/about-us/img3.png" data-lightbox="image-3"><img class="img-responsive" src="images/about-us/img3.png" alt="Paper Cut Image"></a>
+            </div>
         </div>
     </section>
 
-    <footer id="footer" class="text-center">
+    <footer id="footer">
         <div class="container">
-            <p>
-                © 2019 CRID DAM Robotic labs. All Rights Reserved.
-            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>© 2019 CRID DAM Robotic labs. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                     <ul class="pull-right">
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
+                            <!--#gototop-->
+                        </ul>
+                </div>
+            </div>
+            
+
         </div>
     </footer>
 
     <script src="js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
+
 </body>
 </html>
