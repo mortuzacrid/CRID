@@ -4,13 +4,12 @@
     include 'inc/navbar.php';
 ?>
 
-
     <section class="container about-section">
         <h1 class="animated text-center">Contact Us</h1>
         <hr>
         <div class="gap">
 
-            <form action="">
+            <form action="" method="post">
               <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Your Name" required>
