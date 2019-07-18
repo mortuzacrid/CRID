@@ -10,7 +10,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="carousel-content header-titles">
+                                <div class="carousel-content header-titles text-center">
                                     <h3>Bring us <span>your prototype</span></h3>
                                     <h3><span>Improvise it</span> at our lab</h3>
                                     <h3>We will <span>fund it</span></h3>

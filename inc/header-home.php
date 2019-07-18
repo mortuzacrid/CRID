@@ -26,7 +26,7 @@
     <style type="text/css">
         .header-titles h3{
             font-family: 'Montserrat', sans-serif;
-            margin-left: 100px;
+            /*margin-left: 100px;*/
         }
         .header-titles span{
             border: 2px solid #ffffff;
