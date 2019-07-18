@@ -13,7 +13,7 @@
                 <li><a href="training.php">Training</a></li>
                 <li><a href="rbcommunity.php">Community</a></li>
                 <li><a href="aboutus.php">About Us</a></li>
-                <li><a href="http://criddam.com/contact-us/">Contact</a></li>
+                <li><a href="contactus.php">Contact</a></li>
                 <li><a href="http://criddam.com/jobs/">Career</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<i class="icon-angle-down"></i></a>
