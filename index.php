@@ -10,9 +10,13 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="carousel-content center centered">
-                                	<span class="home-icon bounce-in"><i class="fa fa-cogs"></i></span>
-                                    <h2 class="boxed animation animated-item-1 fade-down"><span id="replaceStrings"></span></h2>
+                                <div class="carousel-content header-titles">
+                                    <h3>Bring us <span>your prototype</span></h3>
+                                    <h3><span>Improvise it</span> at our lab</h3>
+                                    <h3>We will <span>fund it</span></h3>
+                                    <h3>We will help you to <span>patent it</span></h3>
+                                    <h3><span>Market it</span></h3>
+                                    <h3>Be a successful <span>Innovator</span></h3>
                                 </div>
                             </div>
                         </div>

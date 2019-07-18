@@ -12,19 +12,19 @@
             <form action="" method="post">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" class="form-control" id="name" placeholder="Your name" required>
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Your Email Address" required>
+                <input type="email" class="form-control" id="email" placeholder="Your email address" required>
               </div>
               <div class="form-group">
                 <label for="subject">Subject</label>
-                <input type="text" class="form-control" id="subject" placeholder="" required>
+                <input type="text" class="form-control" id="subject" placeholder="Subject for the message" required>
               </div>
               <div class="form-group">
                 <label for="text">Message</label>
-                <textarea class="form-control" rows="5" id="text"></textarea>
+                <textarea class="form-control" rows="5" id="text" placeholder="Message that you want to send us"></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
