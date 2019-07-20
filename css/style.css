@@ -2047,6 +2047,18 @@ img.author-box-image {
     }
 }
 
+@media screen and (max-width: 400px){
+    .navbar-inverse {
+        padding-bottom: 37px;
+    }
+    .navbar-nav {
+        padding-top: 20px;
+    }
+    .hero {
+        margin-top: 85px;
+    }
+}
+
 @media screen and (max-width:769px) {
     #quote-carousel .carousel-indicators {
         bottom: -20px !important;
@@ -2376,16 +2388,18 @@ i.fa.fa-child.side-gap {
 }
 
 .dark{
-    background: #202020;
+    background: #70ccddad;
 }
 
 .hero {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.hero-inner{
+    padding: 20px;
 }
 
 .gray{
@@ -2394,4 +2408,21 @@ i.fa.fa-child.side-gap {
 
 #bottom {
     color: #000000;
+}
+
+.navbar-brand>img {
+    display: inline;
+}
+.navbar-brand span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a.navbar-brand {
+    margin-top: -20px;
+}
+
+.navbar-brand>img {
+    display: inline;
+    height: 225%;
 }
