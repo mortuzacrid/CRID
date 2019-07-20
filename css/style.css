@@ -699,7 +699,7 @@ ul.tag-cloud li {
 /*-----------------------------------------------------------------------------------*/
 
 .navbar-inverse {
-    background-color: #202020;
+    background-color: #111688;
     border: none;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -2388,7 +2388,7 @@ i.fa.fa-child.side-gap {
 }
 
 .dark{
-    background: #70ccddad;
+    background: #073a44ad;
 }
 
 .hero {
