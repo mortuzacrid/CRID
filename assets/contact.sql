@@ -4,7 +4,7 @@ CREATE TABLE `contactus`
      `name`    VARCHAR(255) NOT NULL, 
      `email`   VARCHAR(255) NOT NULL, 
      `subject` TINYTEXT NOT NULL, 
-     `meggage` LONGTEXT NOT NULL, 
+     `message` LONGTEXT NOT NULL, 
      `seen`    INT(1) NOT NULL DEFAULT '0', 
      PRIMARY KEY (`id`) 
   ) 
