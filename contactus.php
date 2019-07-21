@@ -2,6 +2,11 @@
     $PAGENAME = "Contact Us";
     include 'inc/header.php';
     include 'inc/navbar.php';
+
+    if (isset($_POST['submit'])) {
+        echo "SUBMITED";
+    }
+
 ?>
 
     <section class="container about-section">
@@ -31,7 +36,7 @@
                 <label for="text">Message</label>
                 <textarea class="form-control" rows="5" id="text" name="message" placeholder="Message that you want to send us"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
+              <input  type="submit" name="submit" value="Send Message" class="btn btn-primary">
             </form>
             </div>
             <div class="col-md-6">
