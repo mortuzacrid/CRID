@@ -1,4 +1,4 @@
-CREATE TABLE `crid`.`contactus` 
+CREATE TABLE `contactus` 
   ( 
      `id`      INT(11) NOT NULL auto_increment, 
      `name`    VARCHAR(255) NOT NULL, 
@@ -9,3 +9,4 @@ CREATE TABLE `crid`.`contactus`
      PRIMARY KEY (`id`) 
   ) 
 engine = innodb; 
+
