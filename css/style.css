@@ -1,6 +1,9 @@
 /* IMPACT - By DistinctiveThemes */
 /* preloader */
-
+.navbar-brand span{
+    font-size: 20px;
+    font-weight: 700;
+}
 .preloader {
   position: fixed;
   top: 0;
@@ -2047,17 +2050,7 @@ img.author-box-image {
     }
 }
 
-@media screen and (max-width: 400px){
-    .navbar-inverse {
-        padding-bottom: 37px;
-    }
-    .navbar-nav {
-        padding-top: 20px;
-    }
-    .hero {
-        margin-top: 85px;
-    }
-}
+
 
 @media screen and (max-width:769px) {
     #quote-carousel .carousel-indicators {
@@ -2075,53 +2068,6 @@ img.author-box-image {
         height: 20px;
     }
 }
-
-
-/* ==========================================================================
-   CONTACT
-   ========================================================================== */
-
-#contactform input#name,
-#contactform input#email,
-#contactform input#website,
-#contactform textarea#comments {
-    width: 100%;
-    padding: 10px 5px;
-    margin-bottom: 15px;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #202020;
-    border: none;
-}
-
-#contactform textarea#comments {
-    min-height: 150px;
-}
-
-#contact h3 {
-    text-transform: uppercase;
-}
-
-#mapwrapper {
-    width: 100%;
-    height: 400px;
-}
-
-.form-horizontal .control-label {
-    display: none;
-}
-
-#message {
-    padding: 0;
-}
-
-.form-control {
-    padding: 10px 5px;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #202020;
-    border: none;
-    border-radius: 0;
-}
-
 
 /* PRELOADER */
 
@@ -2413,10 +2359,7 @@ i.fa.fa-child.side-gap {
 .navbar-brand>img {
     display: inline;
 }
-.navbar-brand span{
-    font-size: 20px;
-    font-weight: 700;
-}
+
 
 a.navbar-brand {
     margin-top: -20px;
@@ -2425,4 +2368,20 @@ a.navbar-brand {
 .navbar-brand>img {
     display: inline;
     height: 225%;
+}
+
+@media screen and (max-width: 400px){
+    .navbar-inverse {
+        padding-bottom: 37px;
+    }
+    .navbar-nav {
+        padding-top: 20px;
+    }
+    .hero {
+        margin-top: 85px;
+    }
+    .navbar-brand>img {
+        display: inline;
+        height: 190%;
+    }
 }
