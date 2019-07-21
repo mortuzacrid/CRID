@@ -20,8 +20,7 @@
           echo "<p class='text-center bg-danger'>Please Fill the form and then submit again.</p>";
         }
     } else {
-        header("Location: index.php"); 
-        exit();
+        echo '<script>document.location.replace("index.php");</script>';
     }
 ?>
     <section class="container text-center">
