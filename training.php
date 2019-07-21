@@ -7,11 +7,9 @@
 
     <section class="container about-section">
         <div>
-            <dic class="gap"></dic>
+            <div class="gap"></div>
+            <div class="gap"></div>
 
-            <div class="col-md-10 col-md-offset-1 gap">
-                <img class="img-responsive top10" src="images/training/1.png" alt="Training Promo Image">
-            </div>
 
             <div class="row gap text-center">
                 <a class="btn btn-primary" href="http://criddam.com/student-registration-form/"><span>Student Registration Form</span></a> <i class="fa fa-child side-gap"></i>
