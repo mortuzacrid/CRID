@@ -1,5 +1,6 @@
 <?php
     require_once('db/dbconfig.php');
+    include "counter.php";
 ?>
 
 <!DOCTYPE html>

@@ -31,7 +31,7 @@
             <p>
                 <ul>
                     <li>Bangladesh, The next robotic destination</li>
-                    <li>স্বপ্নকে বাস্তবে রূপ দেয়া প্রযুক্তিকে ক্ষমতায়ন করা</li>
+                    <li>প্রযুক্তির মাধ্যমে ক্ষমতায়ন করা</li>
                 </ul>
             </p>          
         </div>
