@@ -11,10 +11,10 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Welcome, Shivy</a></li>
-            <li><a href="login.html">Logout</a></li>
+            <li><a href="/">Welcome, <?php  echo $_SESSION['username']; ?></a></li>
+            <li><a href="logout.php">Logout</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
