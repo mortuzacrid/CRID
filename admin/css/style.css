@@ -137,3 +137,23 @@ body{
     background-color: #c0392b;
   }
 }
+.pagination.text-center {
+    margin: 10px 20px;
+}
+
+.pagination.text-center > a {
+    margin: 1px;
+    padding: 6px;
+    border: 1px solid;
+    text-decoration: none;
+    color: black;
+}
+
+a.actieve {
+    background:  #00ceff;
+}
+
+.home-panel {
+    padding-bottom: 0px;
+    margin-bottom: -10px;
+}

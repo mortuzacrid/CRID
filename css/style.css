@@ -2334,7 +2334,8 @@ i.fa.fa-child.side-gap {
 }
 
 .dark{
-    background: #073a44ad;
+    /*background: #073a44ad;*/
+    background: rgba(7,58,68,0.69);
 }
 
 .hero {
@@ -2385,3 +2386,4 @@ a.navbar-brand {
         height: 190%;
     }
 }
+

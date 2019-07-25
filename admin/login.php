@@ -29,8 +29,7 @@
         $_SESSION['login'] = 1;
         $usersinfo = $result->fetch_assoc();
         $_SESSION['username'] = $usersinfo['username'];
-        header('Location: index.php');
-        exit();
+        echo '<script>document.location.replace("index.php");</script>';
     } else {
         echo "<h2 class='text-center'>Failed To Login . Please Tye Again.</h2>";
     }
