@@ -34,6 +34,7 @@
                 <li><a type="button" data-toggle="modal" data-target="#addPage">Add Page</a></li>
                 <li><a href="#">Add Post</a></li>
                 <li><a href="#">Add User</a></li>
+                <li><a href="#">Add Career</a></li>
               </ul>
             </div>
           </div>

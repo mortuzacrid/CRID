@@ -2,7 +2,7 @@
 	// Total unread email
 	$sql = "SELECT id FROM contactus WHERE seen = 0";
 	$result = mysqli_query($con,$sql);
-    $count_unreademails = mysqli_num_rows($result);
+  $count_unreademails = mysqli_num_rows($result);
 
 ?>
 
@@ -15,5 +15,6 @@
 	<a href="/" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Pages <span class="badge">12</span></a>
 	<a href="/" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Posts <span class="badge">33</span></a>
 	<a href="/" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge">203</span></a>
+	<a href="career/career.php" class="list-group-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Career <span class="badge">203</span></a>
 	<a href="seeusemail.php" class="list-group-item"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span> Contact Us Email<span class="badge"><?php echo $count_unreademails; ?></span></a>
 </div>
