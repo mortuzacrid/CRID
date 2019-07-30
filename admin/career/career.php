@@ -29,7 +29,7 @@
         $startpage = 0;
     }
 
-    $sql = "SELECT * FROM contactus ORDER BY id DESC LIMIT $startpage,".POST_PER_PAGE;
+    $sql = "SELECT * FROM careers ORDER BY id DESC LIMIT $startpage,".POST_PER_PAGE;
     $result = mysqli_query($con,$sql);
     $countemais = mysqli_num_rows($result);
 
@@ -46,23 +46,23 @@
 
                         if ($countemais > 0) {
                             while ($row = mysqli_fetch_assoc($result)) {
-                                $emails[] = $row;
+                                $careers[] = $row;
                             }
                     ?>
 
                     <table class="table table-striped table-hover">
                         <tr>
-                            <th>Subject</th>
-                            <th>Email</th>
+                            <th>Position</th>
+                            <th>Vacancy</th>
                             <th></th>
                         </tr>
 
-                    <?php foreach ($emails as $email) { ?>
+                    <?php foreach ($careers as $key) { ?>
                         <tr>
-                            <td><?php echo $email['subject']; ?></td>
+                            <td><?php echo $key['position']; ?></td>
                             <!-- glyphicon glyphicon-remove -->
-                            <td><?php echo $email['email']; ?></td>
-                            <td><a class="btn btn-default" href="viewemail.php?id=<?php echo $email['id'] ?>">View</a></td>
+                            <td><?php echo $key['vacancy']; ?></td>
+                            <td><a class="btn btn-default" href="viewemail.php?id=<?php echo $key['id'] ?>">View</a></td>
                         </tr>
 
                     <?php } ?>
@@ -79,7 +79,7 @@
 
                 <div class="pagination text-center">
                 <?php
-                    $sql = "SELECT id FROM contactus";
+                    $sql = "SELECT id FROM careers";
                     $total = mysqli_num_rows(mysqli_query($con,$sql));
                     $total = ceil($total/POST_PER_PAGE);
 
@@ -95,11 +95,11 @@
                     if ($i == $current_page) {
 
                 ?>
-                <a class="actieve" href="seeusemail.php?p=<?php echo $i; ?>"><?php echo $i; ?></a>
+                <a class="actieve" href="detailcarrier.php?p=<?php echo $i; ?>"><?php echo $i; ?></a>
                 <?php
                     } else {
                 ?>
-                    <a href="seeusemail.php?p=<?php echo $i; ?>"><?php echo $i; ?></a>
+                    <a href="detailcarrier.php?p=<?php echo $i; ?>"><?php echo $i; ?></a>
                 <?php } } ?>
                 </div>
 
