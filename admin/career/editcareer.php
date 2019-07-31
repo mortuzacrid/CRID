@@ -2,7 +2,7 @@
     $PAGE = 'Edit Career Post';
     include '../inc/header.php';
     include '../inc/navbar.php';
-    
+
     if (!isset($_GET['id'])) {
       echo '<script>document.location.replace("index.php");</script>';
       exit();
@@ -15,8 +15,6 @@
       $vacancy = strip_tags($_POST['vacancy']);
       $applylink = strip_tags($_POST['applylink']);
       $jobdetails = $_POST['jobdetails'];
-
-      //$insertquery = "INSERT INTO careers (position,vacancy,applylink,jobdetails) VALUES ('$position','$vacancy','$applylink','$jobdetails')";
       
       $updatequery = "UPDATE careers SET position = '$position',vacancy = '$vacancy',applylink = '$applylink',jobdetails = '$jobdetails' WHERE id = $id";
 
@@ -25,12 +23,19 @@
         header('Location: '.$locationurl);
         exit();
       } else {
-        echo "Error During Saving Data. Please Try again";
+        echo "Error During Updating Data. Please Try again";
       }
     }
 
     if (isset($_POST['delete'])) {
-      // Delete Query
+      $deletesql = "UPDATE careers SET status = 0 WHERE id = $id";
+      if (mysqli_query($con,$deletesql)) {
+        $locationurl =SCRIPT_ROOT. '/admin/career/career.php';
+        header('Location: '.$locationurl);
+        exit();
+      } else {
+        echo "Error During Deleting Data. Please Try again";
+      }
     }
 
 
@@ -50,13 +55,10 @@
                     <h3 class="panel-title">Create Career Posts</h3>
                 </div>
 
-<?php
-
-  $sql = "SELECT * FROM careers WHERE id = $id";
-  $result = mysqli_query($con,$sql)->fetch_assoc();
-
-
-?>
+                <?php
+                  $sql = "SELECT * FROM careers WHERE id = $id";
+                  $result = mysqli_query($con,$sql)->fetch_assoc();
+                ?>
 
                 <div class="panel-body home-panel">
                   <form action="" method="post">

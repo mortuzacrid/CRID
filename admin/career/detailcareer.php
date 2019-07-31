@@ -46,7 +46,7 @@
 
                     <hr>
 
-                    <a href="editcareer.php?id=<?php echo $id; ?>" class="btn btn-primary">Edit</a> || <a href="deletecareer.php?id=<?php echo $id; ?>" class="btn btn-danger">Delete</a>
+                    <a href="editcareer.php?id=<?php echo $id; ?>" class="btn btn-primary">Edit</a> || <a href="detelecareer.php?id=<?php echo $id; ?>" class="btn btn-danger">Delete</a>
                 </div>
             </div>
 
