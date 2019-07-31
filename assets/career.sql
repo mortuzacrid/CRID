@@ -1,8 +1,9 @@
-CREATE TABLE `careers`(
-    `id` INT(11) NOT NULL AUTO_INCREMENT,
-    `position` VARCHAR(400) NOT NULL,
-    `vacancy` INT(5) NOT NULL,
-    `applylink` VARCHAR(500) NOT NULL,
-    `jobdetails` LONGTEXT NOT NULL,
-    PRIMARY KEY(`id`)
-) ENGINE = InnoDB;
+CREATE TABLE `careers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `position` varchar(400) NOT NULL,
+  `vacancy` int(5) NOT NULL,
+  `applylink` varchar(500) NOT NULL,
+  `jobdetails` LONGTEXT NOT NULL,
+  `status` int(11) NOT NULL DEFAULT 1,
+  PRIMARY KEY(`id`)
+) ENGINE=InnoDB;
