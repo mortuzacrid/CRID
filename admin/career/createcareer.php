@@ -1,5 +1,5 @@
 <?php
-  $PAGE = 'Career';
+  $PAGE = 'Create Career';
   include '../inc/header.php';
   include '../inc/navbar.php';
 ?>
