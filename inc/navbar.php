@@ -15,6 +15,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="training.php">Training</a></li>
                 <li><a href="rbcommunity.php">Community</a></li>
+                <li><a href="blog/index.php">Blog</a></li>
                 <li><a href="aboutus.php">About Us</a></li>
                 <li><a href="contactus.php">Contact</a></li>
                 <li><a href="career.php">Career</a></li>
