@@ -2,6 +2,6 @@
 	define('HOST', 'localhost');
 	define('USER', 'root');
 	define('PASS', '');
-	define('DBNAME', 'crid');
+	define('DBNAME', 'crid');	
 
 ?>

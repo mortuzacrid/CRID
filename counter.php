@@ -1,5 +1,5 @@
 <?php
-    $handle = fopen("counter.txt", "r");
+    $handle = fopen($_SERVER["DOCUMENT_ROOT"]."/counter.txt", "r");
     if(!$handle)
     {
         echo "could not open the file";
