@@ -71,7 +71,7 @@
 
                     <?php } else { ?>
 
-                        No email send via contact form.
+                        No Job Post Available Right Now.
 
                     <?php } ?>
                 
