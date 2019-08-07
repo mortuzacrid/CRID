@@ -74,10 +74,11 @@
                         No Blog Post you have done yet.
 
                     <?php } ?>
-                
+                    
+                    <br>
                     <div class="pagination text-center">
                     <?php
-                        $sql = "SELECT id FROM blogs";
+                        $sql = "SELECT id FROM blogs WHERE published = 1";
                         $total = mysqli_num_rows(mysqli_query($con,$sql));
                         $total = ceil($total/POST_PER_PAGE);
 

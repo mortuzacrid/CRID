@@ -48,14 +48,11 @@
                 <hr>
         <?php
                 }
-            } else {
-                echo "No Blog Post Available Right Now.";
-            }
         ?>
 
         <div class="clearfix">
         <?php
-            $sql = "SELECT id FROM blogs";
+            $sql = "SELECT id FROM blogs WHERE published = 1";
             $total = mysqli_num_rows(mysqli_query($con,$sql));
             $total = ceil($total/POST_PER_PAGE);
 
@@ -68,13 +65,21 @@
             for ($i=1; $i <= $total ; $i++) {
             if ($i == $current_page) {
             ?>
-              <a class="btn btn-warning float-right" href="#"><?php echo $i; ?></a>
+              <a class="btn btn-warning float-right" href="index.php?id=<?php echo $i; ?>"><?php echo $i; ?></a>
             <?php
                 } else {
             ?>
-              <a class="btn btn-primary float-right" href="#"><?php echo $i; ?></a>
+              <a class="btn btn-primary float-right" href="index.php?id=<?php echo $i; ?>"><?php echo $i; ?></a>
             <?php } } ?>
         </div>
+
+        <?php
+            } else {
+                echo "No Blog Post Available Right Now.";
+            }
+        ?>
+
+        
         
 
       </div>
