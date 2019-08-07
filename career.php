@@ -11,17 +11,16 @@
 
         <div class="row">
 
-<?php
-  $sql = "SELECT * FROM careers WHERE status = 1 ORDER BY id DESC";
-  $result = mysqli_query($con,$sql);
-  $countemais = mysqli_num_rows($result);
-  if ($countemais > 0) {
-      while ($row = mysqli_fetch_assoc($result)) {
-          $careers[] = $row;
-      }
-
-      foreach ($careers as $key) {
-?>
+      <?php
+        $sql = "SELECT * FROM careers WHERE status = 1 ORDER BY id DESC";
+        $result = mysqli_query($con,$sql);
+        $countemais = mysqli_num_rows($result);
+        if ($countemais > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                $careers[] = $row;
+            }
+            foreach ($careers as $key) {
+      ?>
 
       <a href="singlecareer.php?id=<?php echo $key['id']; ?>">
           <div class="col-sm-6 col-md-3">
@@ -34,11 +33,13 @@
             </div>
           </div>
       </a>
-<?php
-  } } else {
-    echo "<h2>No Job Available right now.</h2>";
-  }
-?>
+      
+      <?php
+        } } else {
+          echo "<h2>No Job Available right now.</h2>";
+        }
+      ?>
+
         </div>
 
     </section>

@@ -2,20 +2,6 @@
   $PAGE = "DASHBOARD";
   include 'inc/header.php';
   include 'inc/navbar.php';
-
-  // for visitor counting
-    $counter = 0;
-    $handle = fopen("../counter.txt", "r");
-    if(!$handle)
-    {
-        echo "could not open the file";
-    }
-    else 
-    {
-        $counter=(int )fread($handle,20);
-        fclose($handle);
-    }
-
 ?>
 
 
