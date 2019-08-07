@@ -33,7 +33,7 @@
                 while ($row = mysqli_fetch_assoc($result)) {
         ?>
                 <div class="post-preview">
-                  <a href="post.html">
+                  <a href="single.php?id=<?php echo $row['id']; ?>">
                     <h2 class="post-title">
                       <?php echo $row['title']; ?>
                     </h2>
@@ -42,7 +42,7 @@
                     </h3>
                   </a>
                   <p class="post-meta">Posted by
-                    <a href="#"><?php echo $raw['publisher_name']; ?></a>
+                    <a href="#"><?php echo $row['publisher_name']; ?></a>
                     on <?php echo $row['publishtime']; ?></p>
                 </div>
                 <hr>

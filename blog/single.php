@@ -6,8 +6,8 @@
     } else {
       $id = $_GET['id'];
     }
-    include 'inc/header.php';
-    include 'inc/navbar.php';
+    include '../inc/header.php';
+    include '../inc/navbar.php';
 
     $sql = "SELECT * FROM blogs WHERE id = $id";
     $result = mysqli_query($con,$sql)->fetch_assoc();
@@ -23,4 +23,4 @@
     </section>
 
 
-<?php include 'inc/footer.php'; ?>
+<?php include '../inc/footer.php'; ?>
