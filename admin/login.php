@@ -5,7 +5,7 @@
 
   if (isset($_POST['login'])) {
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $password = md5($_POST['password']);
 
     $sql = "SELECT id,username FROM admins WHERE email = '$email' AND password ='$password'";
     $result = mysqli_query($con,$sql);
