@@ -1,6 +1,6 @@
 <?php
-  include 'constants.php';
   session_start();
+  include 'constants.php';
   if( !isset($_SESSION['login'])){
     header('Location: login.php');
     exit();

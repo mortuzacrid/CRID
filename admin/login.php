@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CRID || Login Page</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-
-
 <?php
-
+  session_start();
   // Database Configuration
   include $_SERVER["DOCUMENT_ROOT"].'/db/dbconfig.php';
 
@@ -25,8 +12,7 @@
     $have_user = mysqli_num_rows($result);
 
     if ($have_user > 0) {
-        session_start();
-        $_SESSION['login'] = 1;
+        $_SESSION['login'] = "1";
         $usersinfo = $result->fetch_assoc();
         $_SESSION['username'] = $usersinfo['username'];
         echo '<script>document.location.replace("index.php");</script>';
@@ -35,10 +21,20 @@
     }
 
   }
-
-
-
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRID || Login Page</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
 
     <header id="header">
       <div class="container">
