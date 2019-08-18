@@ -7,12 +7,19 @@
 
 <section class="hero dark">
     <div class="hero-inner header-titles container">
-        <h3>Bring us <span>your prototype</span></h3>
-        <h3><span>Improvise it</span> at our labs</h3>
-        <h3>We will <span>Fund it</span></h3>
-        <h3>We will help you to <span>Patent it</span> both in Bangladesh & USA</h3>
-        <h3><span>Market it</span></h3>
-        <h3>Be a successful <span>Innovator</span></h3>
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Bring us <span>your prototype</span></h3>
+                <h3><span>Improvise it</span> at our labs</h3>
+                <h3>We will <span>Fund it</span></h3>
+                <h3>We will help you to <span>Patent it</span> both in Bangladesh & USA</h3>
+                <h3><span>Market it</span></h3>
+                <h3>Be a successful <span>Innovator</span></h3>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-primary joinbtn">Join Now</a>
+            </div>
+        </div>
     </div>
 </section>
 
