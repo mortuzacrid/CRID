@@ -2357,37 +2357,4 @@ a.navbar-brand {
     }
 }
 
-.dark{
-    background: rgba(7,58,68,0.69);
-}
 
-section.hero.dark {
-    text-align: left;
-    position: relative;
-}
-
-section.hero.dark::after {
-    content: "";
-    opacity: 0.9;
-    position: absolute;
-    z-index: -2;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-}
-
-a.btn.btn-primary.joinbtn {
-    margin-top: 130px;
-    padding: 10px 50px;
-    font-size: 20px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-left: 100px;
-    color: #fff;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #7e6ce8;
-    border-color: #2e6da4;
-}
